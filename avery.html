@@ -1,0 +1,112 @@
+<head>
+<style>
+body {
+background: #0B3DC8;
+}
+.orbit {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: skew(0deg,50deg);
+}
+.satelite {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 250px;
+height: 250px;
+margin-top: -125px;
+margin-left: -125px;
+border-radius: 50%;
+border-color: white;
+border-style: solid;
+border-width: 0px 2px 2px 0px;
+animation: spin 8s cubic-bezier(0.445, 0.10, 0.55, 0.85) infinite;
+}
+p {
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -70px;
+margin-left: -200px;
+color: white;
+font: 120px Bambi;
+font-weight: bold; 
+}
+.space {
+width: 500px;
+height: 500px;
+border-radius: 50%;
+position: fixed;
+top: 50%;
+left: 50%;
+border-style:solid;
+border-width: 1000px;
+border-color: black;
+margin-top: -1250px;
+margin-left: -1250px;
+}
+.aerospace-1 {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 400px;
+height: 150px;
+margin-top: -180px;
+margin-left: -160px;
+background-color: #cc0000;
+border-radius: 50%;
+transform: rotate(345deg);
+}
+.aerospace-2 {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 500px;
+height: 150px;
+margin-top: -190px;
+margin-left: -250px;
+background: #0B3DC8;
+border-radius: 50%;
+transform: rotate(345deg);
+}
+.aerospace-3 {
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: 2px;
+margin-left: -320px;
+border-top: 10px solid transparent;
+border-right: 350px solid #cc0000;
+border-bottom: 10px solid transparent;
+transform: rotate(345deg);
+}
+.aerospace-4 {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 75px;
+height: 20px;
+margin-top: -35px;
+margin-left: -100px;
+background: #0B3DC8;
+transform: rotate(345deg);
+}
+@keyframes spin {
+0% {transform: rotate(25deg);}
+50% {transform: rotate(205deg);}
+100% {transform: rotate(385deg);}
+}
+</style>
+</head>
+<body>
+  <div class="aerospace-1"></div>
+  <div class="aerospace-2"></div>
+      <div class="aerospace-4"></div>
+  <div class="orbit"><div class="satelite"></div></div>
+  <div class="aerospace-3"></div>
+
+  <p>AVERY</p>
+  <div class="space"></div>
+
+</body>
