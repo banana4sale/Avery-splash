@@ -1,7 +1,7 @@
 <head>
 <style>
 body {
-background: #0B3DC8;
+background: black;
 overflow: hidden;
 }
 .orbit {
@@ -9,6 +9,17 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: skew(0deg,45deg);
+}
+.blue-circle {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 500px;
+height: 500px;
+margin-top: -250px;
+margin-left: -250px;
+background: #0B3DC8;
+border-radius: 50%;
 }
 .satelite {
 position: absolute;
@@ -34,7 +45,7 @@ color: white;
 font: 120px Bambi;
 font-weight: bold; 
 }
-.space {
+.inverted-circle {
 width: 500px;
 height: 500px;
 border-radius: 50%;
@@ -197,6 +208,7 @@ background-color: white;
 </style>
 </head>
 <body>
+  <div class="blue-circle"></div>
   <div class="curve-main-ellipse"></div>
   <div class="curve-eraser-ellipse"></div>
   <div class="curve-eraser-square"></div>
@@ -205,7 +217,7 @@ background-color: white;
   <div class="line-lower-below"></div>
   <div class="orbit"><div class="satelite"></div></div>
   <div class="line-lower-above"></div>
-  <div class="space"></div>
+  <div class="inverted-circle"></div>
   <div class="curve-tip-square-red"></div>
   <div class="curve-tip-square-black"></div>
   <div class="line-lower-tail-red"></div>
