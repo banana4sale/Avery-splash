@@ -2,12 +2,13 @@
 <style>
 body {
 background: #0B3DC8;
+overflow: hidden;
 }
 .orbit {
 position: absolute;
 top: 50%;
 left: 50%;
-transform: skew(0deg,50deg);
+transform: skew(0deg,45deg);
 }
 .satelite {
 position: absolute;
@@ -37,10 +38,11 @@ font-weight: bold;
 width: 500px;
 height: 500px;
 border-radius: 50%;
-position: fixed;
+position: absolute;
+overflow: hidden;
 top: 50%;
 left: 50%;
-border-style:solid;
+border-style: solid;
 border-width: 1000px;
 border-color: black;
 margin-top: -1250px;
@@ -114,27 +116,78 @@ margin-top: 144px;
 margin-left: -250px;
 transform: rotate(320deg);
 }
-.curve-tip-square {
+.line-lower-tail-red {
 position: absolute;
 top: 50%;
 left: 50%;
 width: 50px;
-height: 21px;
+height: 7px;
 background: #cc0000;
-margin-top: -142px;
-margin-left: 205px;
-transform: rotate(138deg);
+margin-top: 207px;
+margin-left: -190px;
+transform: rotate(320deg);
 }
-.curve-tip-triangle {
+.line-lower-tail-black {
 position: absolute;
 top: 50%;
 left: 50%;
-border-top: 12px solid transparent;
-border-right: 70px solid #cc0000;
-border-bottom: 9px solid transparent;
-margin-top: -186px;
-margin-left: 230px;
-transform: rotate(122deg);
+width: 50px;
+height: 15px;
+background: black;
+margin-top: 207px;
+margin-left: -213px;
+transform: rotate(90deg);
+}
+.line-upper-tail-black {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 50px;
+height: 15px;
+margin-top: 41px;
+margin-left: -310px;
+background: black;
+transform: rotate(45deg);
+}
+.line-upper-tail-red {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 50px;
+height: 4px;
+background: #cc0000;
+margin-top: 41px;
+margin-left: -284px;
+transform: rotate(344deg);
+}
+.curve-tip-square-red {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 100px;
+height: 21px;
+background: #cc0000;
+margin-top: -158px;
+margin-left: 200px;
+transform: rotate(320deg);
+}
+.curve-tip-square-black {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 25px;
+height: 50px;
+background: black;
+margin-top: -190px;
+margin-left: 275px;
+transform: rotate(20deg);
+}
+.star {
+position: absolute;
+top: 50%;
+left: 50%;
+border-radius: 50%;
+background-color: white;
 }
 @keyframes spin {
 0% {transform: rotate(25deg);}
@@ -144,16 +197,61 @@ transform: rotate(122deg);
 </style>
 </head>
 <body>
-
   <div class="curve-main-ellipse"></div>
   <div class="curve-eraser-ellipse"></div>
   <div class="curve-eraser-square"></div>
+  <div class="curve-tail-triangle"></div>
+  <p>AVERY</p>
   <div class="line-lower-below"></div>
   <div class="orbit"><div class="satelite"></div></div>
   <div class="line-lower-above"></div>
-  <div class="curve-tail-triangle"></div>
-  <p>AVERY</p>
   <div class="space"></div>
-  <div class="curve-tip-triangle"></div>
-    <div class="curve-tip-square"></div>
+  <div class="curve-tip-square-red"></div>
+  <div class="curve-tip-square-black"></div>
+  <div class="line-lower-tail-red"></div>
+  <div class="line-lower-tail-black"></div>
+  <div class="line-upper-tail-red"></div>
+  <div class="line-upper-tail-black"></div>
+  <div class="star" style="width: 5; height: 5; margin-top: -234; margin-left: 53"></div></div></div>
+  <div class="star" style="width: 3; height: 3; margin-top: -201; margin-left: 53"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: -200; margin-left: -50"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: -197; margin-left: -45"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: -194; margin-left: -39"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: -189; margin-left: -47"></div>
+  <div class="star" style="width: 5; height: 5; margin-top: -135; margin-left: -38"></div>
+  <div class="star" style="width: 4; height: 4; margin-top: -200; margin-left: 15"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: -220; margin-left: 30"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: -213; margin-left: 12"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: -201; margin-left: 7"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: -230; margin-left: -10"></div>
+  <div class="star" style="width: 2; height: 2; margin-top: -124; margin-left: -62"></div>
+  <div class="star" style="width: 2; height: 2; margin-top: -153; margin-left: -51"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: 35; margin-left: -100"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: 141; margin-left: -156"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: 150; margin-left: -125"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: 143; margin-left: -110"></div>
+  <div class="star" style="width: 2; height: 2; margin-top: 144; margin-left: -117"></div>
+  <div class="star" style="width: 2; height: 2; margin-top: 141; margin-left: -123"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: 127; margin-left: -83"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: 92; margin-left: -78"></div>
+  <div class="star" style="width: 4; height: 4; margin-top: 150; margin-left: -68"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: 164; margin-left: -77"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: 190; margin-left: -68"></div>
+  <div class="star" style="width: 5; height: 5; margin-top: 199; margin-left: -87"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: 123; margin-left: -27"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: 155; margin-left: -2"></div>
+  <div class="star" style="width: 2; height: 2; margin-top: 131; margin-left: 103"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: 117; margin-left: 101"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: 108; margin-left: 109"></div>
+  <div class="star" style="width: 2; height: 2; margin-top: 115; margin-left: 110"></div>
+  <div class="star" style="width: 4; height: 4; margin-top: 203; margin-left: 111"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: 78; margin-left: 147"></div>
+  <div class="star" style="width: 4; height: 4; margin-top: 86; margin-left: 158"></div>
+  <div class="star" style="width: 5; height: 5; margin-top: 83; margin-left: 173"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: 88; margin-left: 179"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: 98; margin-left: 169"></div>
+  <div class="star" style="width: 3; height: 3; margin-top: 121; margin-left: 167"></div>
+  <div class="star" style="width: 5; height: 5; margin-top: 137; margin-left: 169"></div>
+  <div class="star" style="width: 2; height: 2; margin-top: 132; margin-left: 176"></div>
+
 </body>
