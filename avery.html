@@ -46,7 +46,7 @@ border-color: black;
 margin-top: -1250px;
 margin-left: -1250px;
 }
-.aerospace-1 {
+.curve-main-ellipse {
 position: absolute;
 top: 50%;
 left: 50%;
@@ -58,7 +58,7 @@ background-color: #cc0000;
 border-radius: 50%;
 transform: rotate(345deg);
 }
-.aerospace-2 {
+.curve-eraser-ellipse {
 position: absolute;
 top: 50%;
 left: 50%;
@@ -70,7 +70,7 @@ background: #0B3DC8;
 border-radius: 50%;
 transform: rotate(345deg);
 }
-.aerospace-3 {
+.curve-tail-triangle {
 position: absolute;
 top: 50%;
 left: 50%;
@@ -81,16 +81,60 @@ border-right: 350px solid #cc0000;
 border-bottom: 10px solid transparent;
 transform: rotate(345deg);
 }
-.aerospace-4 {
+.curve-eraser-square {
 position: absolute;
 top: 50%;
 left: 50%;
-width: 75px;
+width: 100px;
 height: 20px;
 margin-top: -35px;
 margin-left: -100px;
 background: #0B3DC8;
 transform: rotate(345deg);
+}
+.line-lower-below {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 320px;
+height: 7px;
+background: #cc0000;
+margin-top: -28px;
+margin-left: -45px;
+transform: rotate(320deg);
+}
+.line-lower-above {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 320px;
+height: 7px;
+background: #cc0000;
+margin-top: 144px;
+margin-left: -250px;
+transform: rotate(320deg);
+}
+.curve-tip-square {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 50px;
+height: 21px;
+background: #cc0000;
+margin-top: -142px;
+margin-left: 205px;
+transform: rotate(138deg);
+}
+.curve-tip-triangle {
+position: absolute;
+top: 50%;
+left: 50%;
+border-top: 12px solid transparent;
+border-right: 70px solid #cc0000;
+border-bottom: 9px solid transparent;
+margin-top: -185px;
+margin-left: 229px;
+transform: rotate(122deg);
 }
 @keyframes spin {
 0% {transform: rotate(25deg);}
@@ -100,13 +144,16 @@ transform: rotate(345deg);
 </style>
 </head>
 <body>
-  <div class="aerospace-1"></div>
-  <div class="aerospace-2"></div>
-      <div class="aerospace-4"></div>
-  <div class="orbit"><div class="satelite"></div></div>
-  <div class="aerospace-3"></div>
 
+  <div class="curve-main-ellipse"></div>
+  <div class="curve-eraser-ellipse"></div>
+  <div class="curve-eraser-square"></div>
+  <div class="line-lower-below"></div>
+  <div class="orbit"><div class="satelite"></div></div>
+  <div class="line-lower-above"></div>
+  <div class="curve-tail-triangle"></div>
   <p>AVERY</p>
   <div class="space"></div>
-
+  <div class="curve-tip-triangle"></div>
+    <div class="curve-tip-square"></div>
 </body>
